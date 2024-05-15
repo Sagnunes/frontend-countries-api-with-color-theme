@@ -14,7 +14,7 @@ function btnChangeTheme() {
 <template>
   <div
     class="flex flex-row bg-white dark:bg-dark-blue h-20 items-center justify-around drop-shadow-lg md:px-[90px] lg:px-[335px] md:justify-between">
-    <p class="font-nunito text-sm font-extrabold text-light-mode-very-dark-blue dark:text-white md:text-2xl">Where in
+    <p class="font-nunito text-sm font-extrabold text-light-mode-very-dark-blue dark:text-white md:text-2xl hover:cursor-pointer" >Where in
       the world?</p>
     <div class="flex flex-row items-center space-x-2">
       <font-awesome-icon :icon="['fa-regular', 'moon']" class="-rotate-12" v-show="globalStore.theme === 'light'" />
