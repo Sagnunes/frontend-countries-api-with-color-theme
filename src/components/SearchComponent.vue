@@ -16,7 +16,7 @@ function handleInput() {
     <font-awesome-icon :icon="['fas', 'magnifying-glass']" class="-rotate-12 text-gray-600 dark:text-white" />
     <input type="text" placeholder="Search for a country" class="placeholder:text-xs placeholder:text-gray-400 md:text-sm
     border-transparent
-    focus:border-transparent focus:ring-0 text-sm text-gray-600 dark:placeholder:text-white dark:bg-dark-blue dark:text-white" v-model="textInput" @keydown.enter="handleInput" />
+    focus:border-transparent focus:ring-0 text-sm text-gray-600 dark:placeholder:text-white dark:bg-dark-blue dark:text-white" v-model="textInput" @keydown="handleInput" />
   </div>
 </template>
 

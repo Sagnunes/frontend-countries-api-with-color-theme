@@ -9,7 +9,7 @@ export const useCountriesStore = defineStore('countries', {
   getters: {
     filterByName(state) {
       return (name) => {
-        return state.jsonCountries.find((country) => country.name.includes(name))
+        return state.jsonCountries.filter((country) => country.name.includes(name))
       }
     },
     filterByRegion(state) {
