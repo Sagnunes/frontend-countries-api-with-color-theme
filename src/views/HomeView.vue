@@ -23,7 +23,7 @@ const country = ref()
     <div v-if="countries.length > 0" class="grid grid-cols-1 md:grid-cols-4 gap-16">
       <CardComponent v-for="country in countries" :key="country.name" :country="country" />
     </div>
-    <CardComponent :key="country['name']" :country="country" v-if="country" />
+<!--    <CardComponent :key="country['name']" :country="country" v-if="country" />-->
   </div>
 </template>
 
